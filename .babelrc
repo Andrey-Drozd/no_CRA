@@ -1,11 +1,13 @@
 {
   "presets": [
-    "@babel/preset-env",
-    [
-      "@babel/preset-react",
-      {
+    [ "@babel/preset-env", {  // for compiling ES2015+ syntax
+      "corejs": 3, // для задания полифилов
+      "useBuiltIns": "usage", // импортируем только те которые используем
+      "debug": false,
+      "modules": false // использовать стандартный синтаксис import, без require
+    } ],
+    [ "@babel/preset-react", { // for React JSX
         "runtime": "automatic"
-      }
-    ]
-  ]
+      } ],
+  ],
 }

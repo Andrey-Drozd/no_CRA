@@ -1,14 +1,16 @@
 import React from 'react'
-import styles from "./HelloWorld.module"
+import styles from "./Component1.module"
 
-const HelloWorld = () => {
+import catImg from './images/cat.jpg'
+
+const Component1 = () => {
     return (
         <>
-            <div className={styles.hello}>Hello World!</div>
+            <div className={styles.component1}>Component - 1!</div>
 
-            <button>push me</button>
+            <img src={catImg}/>
         </>
     )
 }
 
-export { HelloWorld }
+export { Component1 }

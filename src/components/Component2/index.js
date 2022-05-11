@@ -1,3 +1,3 @@
-import { HelloWorld } from './HelloWord'
+import { Component2 } from './Component2'
 
-export { HelloWorld }
+export { Component2 }

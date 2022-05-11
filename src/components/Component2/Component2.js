@@ -1,14 +1,14 @@
 import React from 'react'
-import styles from "./HelloWorld.module"
+import styles from "./Component2.module"
 
-const HelloWorld = () => {
+const Component2 = () => {
     return (
         <>
-            <div className={styles.hello}>Hello World!</div>
+            <div className={styles.hello}>Component - 2!</div>
 
             <button>push me</button>
         </>
     )
 }
 
-export { HelloWorld }
+export { Component2 }
