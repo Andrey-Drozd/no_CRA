@@ -1,7 +1,11 @@
-.component1 {
+.block1 {
     color: red;
     width: 500px;
     height: 500px;
     background-image: url('./images/cat.jpg');
     background-size: cover;
+
+    &__subtitle {
+        font-size: 40px;
+    }
 }

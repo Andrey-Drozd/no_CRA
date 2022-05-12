@@ -10,7 +10,7 @@ module.exports = {
 // режим приложения
 mode: isDevelopment ? 'development' : 'production',
 
-// модули (правила)
+// модули (функции)
 module: {
     rules: [
         {
@@ -30,24 +30,24 @@ module: {
             type: 'javascript/auto'
         },
 
-        {
-            test: /\.(ttf|otf|eot|woff|woff2)$/i,
-            exclude: /node_modules/,
-            type: 'asset/resource',
-            use: [
-                {
-                    loader: 'file-loader',
-                    options: {
-                        outputPath: 'fonts',
-                        name: '[name].[ext]',
-                    },
-                },
-            ],
-        },
+        // {
+        //     test: /\.(ttf|otf|eot|woff|woff2)$/i,
+        //     exclude: /node_modules/,
+        //     type: 'asset/resource',
+        //     use: [
+        //         {
+        //             loader: 'file-loader',
+        //             options: {
+        //                 outputPath: 'fonts',
+        //                 name: '[name].[ext]',
+        //             },
+        //         },
+        //     ],
+        // },
 
 
         {
-            test: /\.(js|jsx)$/,
+            test: /\.(js|jsx)$/i,
             exclude: /node_modules/,
             use: [
                 {
@@ -59,23 +59,30 @@ module: {
             ],
         },
         {
-            test: /\.css$/,
+            test: /\.(sc|c)ss$/i,
             exclude: /node_modules/,
             use: [
                 isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
                 {
                     loader: 'css-loader', // лоадер для преобразования CSS - в модуль JavaScript
                     options: {
-                        modules: true, // для задания модульности css (уникальные стили)
-                        sourceMap: !isDevelopment,
+                        modules: false, // для задания модульности css (уникальные стили)
                     }
                 },
                 {
-                    loader: "postcss-loader", options: {
+                    loader: "postcss-loader",
+                    options: {
                         postcssOptions: {
-                            plugins: [],
+                            plugins: [
+                                [
+                                    "postcss-preset-env", {}
+                                ]
+                            ],
                         },
                     },
+                },
+                {
+                    loader: 'sass-loader'
                 },
             ]
         },
@@ -99,7 +106,7 @@ resolve: {
     extensions: ['*', '.js', '.jsx', '.css', '.scss']
 },
 
-// плагины
+// плагины (классы)
 plugins: [
     // создает уникальный файл бандла с хешэм и удаляет старые бандлы
     new CleanWebpackPlugin(),

@@ -1,12 +1,18 @@
 import React from 'react'
-import styles from "./Component1.module"
+import './Component1.scss'
 
 import catImg from './images/cat.jpg'
 
 const Component1 = () => {
     return (
         <>
-            <div className={styles.component1}>Component - 1!</div>
+            <div className='block1'>
+                <span>Component - 1!</span>
+
+                <div className='block1__subtitle'>
+                    <span>Subtitle</span>
+                </div>
+            </div>
 
             <img src={catImg}/>
         </>
