@@ -4,8 +4,17 @@
     height: 500px;
     background-image: url('./images/cat.jpg');
     background-size: cover;
+    overflow: hidden;
 
     &__subtitle {
-        font-size: 40px;
+        font-family: 'Inconsolata';
+        font-weight: 800;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle2 {
+        font-family: 'Mukta';
+        font-weight: 200;
     }
 }

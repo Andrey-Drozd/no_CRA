@@ -89,15 +89,24 @@ module: {
     ]
 },
 
-// путь в entry файл
+// путь в entry файл[ы]
 entry: {
-    main: ("./src/index.js")
+    main: ("./src/index.js"),
+    main_other: ("./src/index-other.js"),
 },
 
 // путь для бандл файла
 output: {
     path: path.resolve(__dirname, './dist'),
     filename: isDevelopment ? '[name].js' : '[name].[contenthash].js',
+},
+
+// карты
+devtool: isDevelopment ? 'source-map' : false,
+
+// оптимизация импортируемых библиотек (отдельный бандл с импортами для переиспользования)
+optimization: {
+    splitChunks:{ chunks: 'all' }
 },
 
 // чтобы не указывать импорт с расширеням
