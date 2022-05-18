@@ -1,7 +1,6 @@
 const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 
 const isDevelopment = process.env.NODE_ENV === 'development'
@@ -29,23 +28,20 @@ module: {
             ],
             type: 'javascript/auto'
         },
-
-        // {
-        //     test: /\.(ttf|otf|eot|woff|woff2)$/i,
-        //     exclude: /node_modules/,
-        //     type: 'asset/resource',
-        //     use: [
-        //         {
-        //             loader: 'file-loader',
-        //             options: {
-        //                 outputPath: 'fonts',
-        //                 name: '[name].[ext]',
-        //             },
-        //         },
-        //     ],
-        // },
-
-
+         {
+             test: /\.(ttf|otf|eot|woff|woff2)$/i,
+             exclude: /node_modules/,
+             type: 'asset/resource',
+             use: [
+                 {
+                     loader: 'file-loader',
+                     options: {
+                         outputPath: 'fonts',
+                         name: '[name].[ext]',
+                     },
+                 },
+             ],
+         },
         {
             test: /\.(js|jsx)$/i,
             exclude: /node_modules/,
@@ -92,13 +88,13 @@ module: {
 // путь в entry файл[ы]
 entry: {
     main: ("./src/index.js"),
-    main_other: ("./src/index-other.js"),
 },
 
 // путь для бандл файла
 output: {
     path: path.resolve(__dirname, './dist'),
     filename: isDevelopment ? '[name].js' : '[name].[contenthash].js',
+    clean: true
 },
 
 // карты
@@ -117,9 +113,6 @@ resolve: {
 
 // плагины (классы)
 plugins: [
-    // создает уникальный файл бандла с хешэм и удаляет старые бандлы
-    new CleanWebpackPlugin(),
-
     // создаст основной html и свяжет билд JS
     new HtmlWebPackPlugin({
         buildTime: new Date().toISOString(),
