@@ -8,9 +8,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack serve --config webpack.config.js --open",
-    "dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js"
+    "start": "cross-env webpack serve --config webpack.config.js --env mode=development",
+    "dev": "cross-env webpack --config webpack.config.js --env mode=development",
+    "build": "cross-env webpack --config webpack.config.js --env mode=production"
   },
   "author": "Andrey Drozd",
   "license": "ISC",
