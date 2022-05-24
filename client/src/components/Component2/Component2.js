@@ -10,7 +10,7 @@ const Component2 = () => {
         <>
             <div className='block2'>Component - 2!</div>
 
-            <spna>{arrReverse}</spna>
+            <span>{arrReverse}</span>
 
             <button>push me</button>
         </>

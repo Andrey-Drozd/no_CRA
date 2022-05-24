@@ -8,6 +8,7 @@ import catImg from './images/cat.jpg'
 const Component1 = () => {
     const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     const arrReverse = reverse(arr)
+    console.log(arrReverse)
     return (
         <>
             <div className='block1'>
