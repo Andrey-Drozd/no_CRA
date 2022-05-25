@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = ({isDev}) => {
     return {
         // режим приложения
@@ -11,12 +13,15 @@ module.exports = ({isDev}) => {
             hot: true,
             open: true,
             port: 3000,
+            allowedHosts: 'auto',
         },
-
-        // чтобы не указывать импорт с расширеням
-        // можно дополнить указав alias, для задания импортов типа import Utility from 'Utilities/utility'
         resolve: {
-            extensions: ['*', '.js', '.jsx', '.css', '.scss']
+            // alias, для задания импортов типа import Utility from '$Utilities/utility'
+            alias: {
+                $components: path.resolve(__dirname, '../../src/components')
+            },
+            // чтобы не указывать импорт с расширеням
+            extensions: ['.js', '.jsx', 'ts', 'tsx', '.css', '.scss']
         },
     }
 }

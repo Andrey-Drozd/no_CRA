@@ -4,7 +4,7 @@ const path = require("path")
 module.exports = ({isDev}) => {
     return {
         output: {
-            filename: isDev ? '[name].js' : '[name].[hash:8].js',
+            filename: isDev ? '[name].js' : '[name].[contenthash].js',
             path: path.resolve(__dirname, '../../dist'),
             clean: true
         }

@@ -1,6 +1,7 @@
 const buildConfig = require('./config/webpack/buildConfig')
 
 const env = process.env.NODE_ENV || 'development'
+const isAnalyzer = process.env.ANALYZER || false
 const isDev = env === 'development'
 
 const buildConfiguration = (buildConfig) => {
@@ -8,7 +9,7 @@ const buildConfiguration = (buildConfig) => {
         (acc, part) => {
             return ({
                 ...acc,
-                ...part({isDev})
+                ...part({isDev, isAnalyzer})
             })
         }, {}
     )
