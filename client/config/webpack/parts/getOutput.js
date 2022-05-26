@@ -5,7 +5,7 @@ module.exports = ({isDev}) => {
     return {
         output: {
             filename: isDev ? '[name].js' : '[name].[contenthash].js',
-            path: path.resolve(__dirname, '../../dist'),
+            path: path.resolve(__dirname, '../../../dist'),
             clean: true
         }
     }

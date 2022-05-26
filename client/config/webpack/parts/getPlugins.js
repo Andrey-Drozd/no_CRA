@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin")
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
-module.exports = ({isDev, isAnalyzer}) => {
+module.exports = ({isDev, isBundleAnalyzer}) => {
 
     const plugins = []
 
@@ -30,10 +30,9 @@ module.exports = ({isDev, isAnalyzer}) => {
 
     if (isDev) {
         plugins.push(...devPlugins)
-        isAnalyzer && plugins.push(new BundleAnalyzerPlugin())
     } else {
         plugins.push(...prodPlugins)
-        isAnalyzer && plugins.push(new BundleAnalyzerPlugin())
+        isBundleAnalyzer && plugins.push(new BundleAnalyzerPlugin())
     }
 
 

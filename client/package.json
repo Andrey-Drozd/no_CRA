@@ -8,10 +8,10 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "cross-env webpack serve --config webpack.config.js",
-    "dev": "cross-env ANALYZER=true webpack --config webpack.config.js",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "build-analyzer": "cross-env NODE_ENV=production ANALYZER=true webpack --config webpack.config.js"
+    "start": "cross-env webpack serve --config config/webpack/webpack.config.js",
+    "dev": "cross-env webpack --config config/webpack/webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack/webpack.config.js",
+    "bundle-analyzer": "cross-env NODE_ENV=production BUNDLE_ANALYZER=true webpack --config config/webpack/webpack.config.js"
   },
   "author": "Andrey Drozd",
   "license": "ISC",
