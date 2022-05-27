@@ -8,7 +8,7 @@ module.exports = ({isDev}) => {
                 $components: path.resolve(__dirname, '../../../src/components')
             },
             // чтобы не указывать импорт с расширеням
-            extensions: ['.js', '.jsx', 'ts', 'tsx', '.css', '.scss']
+            extensions: ['.js', '.jsx', '.ts', '.tsx', '.css', '.scss']
         }
     }
 }

@@ -35,6 +35,15 @@ module.exports = ({isDev}) => {
                     ],
                 },
                 {
+                    test: /\.(ts|tsx)$/i,
+                    exclude: /node_modules/,
+                    use: [
+                        {
+                            loader: 'ts-loader'
+                        },
+                    ]
+                },
+                {
                     test: /\.(sc|c)ss$/i,
                     exclude: /node_modules/,
                     use: [

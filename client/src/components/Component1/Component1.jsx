@@ -3,7 +3,7 @@ import './Component1.scss'
 
 import reverse from 'lodash/reverse'
 
-import catImg from './images/cat.jpg'
+import CatImg from './images/cat.jpg'
 
 const Component1 = () => {
     const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -25,7 +25,7 @@ const Component1 = () => {
                 </div>
             </div>
 
-            <img src={catImg}/>
+            <img src={CatImg}/>
         </>
     )
 }

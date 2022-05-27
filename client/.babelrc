@@ -9,5 +9,6 @@
     [ "@babel/preset-react", { // for React JSX
         "runtime": "automatic"
       } ],
-  ],
+    [ "@babel/preset-typescript", {} ] // for React TS
+  ]
 }

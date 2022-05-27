@@ -2,7 +2,7 @@
 module.exports = () => {
     return {
         entry: {
-            bundle: ("./src/index.js")
+            bundle: ("./src/index")
         }
     }
 }
