@@ -2,9 +2,9 @@
   "presets": [
     [ "@babel/preset-env", {  // for compiling ES2015+ syntax
       "corejs": 3, // для задания полифилов
-      "useBuiltIns": "usage", // импортируем только те которые используем
       "debug": false,
       "modules": false // использовать стандартный синтаксис import, без require
+      "useBuiltIns": "usage", // импортируем только те которые используем
     } ],
     [ "@babel/preset-react", { // for React JSX
         "runtime": "automatic"

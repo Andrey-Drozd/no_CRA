@@ -1,52 +1,31 @@
 {
-  "include": ["src/**/*", "index.d.ts"],
   "exclude": ["node_modules"],
+  "include": ["src/**/*", "index.d.ts"],
   "compilerOptions": {
-    "baseUrl": "./",
-    "rootDir": "src",
-    "outDir": "dist",
-    //  преобразуем код эквивалентый вызовам React.createElement calls (работает ли при noEmit?)
-    "jsx": "react",
-    // отключить передачу файлов из компиляции
-    "noEmit": false,
-    // не компилировать файлы, если есть ошибки
-    "noEmitOnError": false,
-    // компилириуем в ES5, по умолчанию ES3
-    "target": "ES2015",
-    // модульная система
-    "module": "ES2015",
-    // модульная разрешающая стратегия
-    "moduleResolution": "node",
-    // используем только перечисленные библиотеки-типы, иначе бы использвались все
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    // билдим файлы JS
     "allowJs": true,
-    // проверяем на ошибки в файлах JS
-    "checkJs": true,
-    // разрешить недостижимый код
-    "allowUnreachableCode": false,
-    // запрет на использование присвоения типу undefined в случаях type?: "dark" | "light"
-    "exactOptionalPropertyTypes": true,
-    // любой непустой регистр внутри оператора switch включает либо break, либо return
-    "noFallthroughCasesInSwitch": true,
-    // запретить переопределение метода через наследуемый класс (переопеределение через override)
-    "noImplicitOverride": true,
-    // проверка что происходит заданный возврат типа в функции
-    "noImplicitReturns": true,
-    // согласованность между доступом к полю через синтаксис (obj.key) и (obj["key"]) и способом объявления свойства в типе
-    "noPropertyAccessFromIndexSignature": true,
-    // добавит undefined к необъявленному полю в типе
-    "noUncheckedIndexedAccess": true,
-    // проверка на неиспользованную переменную
-    "noUnusedLocals": true,
-    // проверка на неиспользванный параметр
-    "noUnusedParameters": true,
-    // разрешает импортировать модули с расширением .json
-    "resolveJsonModule": true,
-    // расширенный строгий режим с различными правилами
-    "strict": true,
-    // ращрегить import по умолчанию
     "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "baseUrl": "./",
+    "checkJs": true,
+    "exactOptionalPropertyTypes": true,
+    "jsx": "react",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ES2015",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "noEmitOnError": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "rootDir": "src",
+    "strict": true,
+    "target": "ES2015",
     "paths" : {
       "$components/*": ["src/components/*"]
     }
