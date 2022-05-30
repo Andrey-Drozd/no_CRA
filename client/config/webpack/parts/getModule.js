@@ -22,7 +22,7 @@ module.exports = ({isDev}) => {
                     type: 'asset/resource'
                 },
                 {
-                    test: /\.(js|jsx)$/i,
+                    test: /\.(js|jsx|ts|tsx)$/i,
                     exclude: /node_modules/,
                     use: [
                         {
@@ -34,15 +34,15 @@ module.exports = ({isDev}) => {
                         },
                     ],
                 },
-                {
-                    test: /\.(ts|tsx)$/i,
-                    exclude: /node_modules/,
-                    use: [
-                        {
-                            loader: 'ts-loader'
-                        },
-                    ]
-                },
+                // {
+                //     test: /\.(ts|tsx)$/i,
+                //     exclude: /node_modules/,
+                //     use: [
+                //         {
+                //             loader: 'ts-loader'
+                //         },
+                //     ]
+                // },
                 {
                     test: /\.(sc|c)ss$/i,
                     exclude: /node_modules/,
