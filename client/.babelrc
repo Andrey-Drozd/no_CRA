@@ -1,14 +1,14 @@
 {
   "presets": [
-    [ "@babel/preset-env", {  // for compiling ES2015+ syntax
-      "corejs": 3, // для задания полифилов
+    [ "@babel/preset-env", {
+      "corejs": 3,
       "debug": false,
-      "modules": false, // использовать стандартный синтаксис import, без require
-      "useBuiltIns": "usage", // импортируем только те которые используем
+      "modules": false,
+      "useBuiltIns": "usage"
     } ],
-    [ "@babel/preset-react", { // for React JSX
+    [ "@babel/preset-react", {
         "runtime": "automatic"
       } ],
-    [ "@babel/preset-typescript", {} ] // for React TS
+    [ "@babel/preset-typescript", {} ]
   ]
 }
