@@ -1,12 +1,12 @@
 {
   "exclude": ["node_modules"],
-  "include": ["src/**/*", "index.d.ts"],
+  "include": ["src/**/*", "config/", "index.d.ts"],
   "compilerOptions": {
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
     "baseUrl": "./",
-    "checkJs": true,
+    "checkJs": false,
     "exactOptionalPropertyTypes": true,
     "jsx": "react",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
@@ -23,7 +23,7 @@
     "noUnusedParameters": true,
     "outDir": "dist",
     "resolveJsonModule": true,
-    "rootDir": "src",
+    "rootDir": ".",
     "strict": true,
     "target": "ES2015",
     "paths" : {

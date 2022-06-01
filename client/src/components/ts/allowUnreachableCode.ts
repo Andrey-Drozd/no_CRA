@@ -6,3 +6,5 @@ function allowUnreachableCode(n: number) {
 
   // return true;
 }
+
+allowUnreachableCode(123);
