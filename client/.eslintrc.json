@@ -59,6 +59,15 @@
       2,
       "never"
     ],
+    "sort-keys": [
+      "error",
+      "asc",
+      {
+        "caseSensitive": false,
+        "natural": false,
+        "minKeys": 2
+      }
+    ],
     "prettier/prettier": [
       "error",
       {

@@ -5,24 +5,24 @@ module.exports = ({ isDev }) => ({
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif|svg|ico)$/i,
         exclude: /node_modules/,
         generator: {
           filename: 'images/[name]-[contenthash:8][ext]'
         },
+        test: /\.(png|jpe?g|gif|svg|ico)$/i,
         type: 'asset/resource'
       },
       {
-        test: /\.(ttf|otf|eot|woff|woff2)$/i,
         exclude: /node_modules/,
         generator: {
           filename: 'fonts/[name][ext]'
         },
+        test: /\.(ttf|otf|eot|woff|woff2)$/i,
         type: 'asset/resource'
       },
       {
-        test: /\.(js|jsx|ts|tsx)$/i,
         exclude: /node_modules/,
+        test: /\.(js|jsx|ts|tsx)$/i,
         use: [
           {
             loader: 'babel-loader', // есть аналог esbuild-loader
@@ -35,8 +35,8 @@ module.exports = ({ isDev }) => ({
         ]
       },
       {
-        test: /\.(sc|c)ss$/i,
         exclude: /node_modules/,
+        test: /\.(sc|c)ss$/i,
         use: [
           isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
           {

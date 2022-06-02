@@ -9,9 +9,9 @@ module.exports = ({ isDev, isBundleAnalyzer }) => {
   const sharedPlugins = [
     // создаст основной html и свяжет билд JS
     new HtmlWebPackPlugin({
-      title: 'no CRA',
       favicon: './public/favicon.ico',
-      template: './public/index.html'
+      template: './public/index.html',
+      title: 'no CRA'
     })
   ]
 

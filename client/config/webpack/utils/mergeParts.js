@@ -6,7 +6,7 @@ module.exports = (parts) =>
   parts.reduce(
     (acc, part) => ({
       ...acc,
-      ...part({ isDev, isBundleAnalyzer })
+      ...part({ isBundleAnalyzer, isDev })
     }),
     {}
   )
