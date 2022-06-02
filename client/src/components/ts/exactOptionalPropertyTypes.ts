@@ -1,13 +1,13 @@
 interface UserDefaults {
-  colorThemeOverride?: 'dark' | 'light';
+  colorThemeOverride?: 'dark' | 'light'
 }
 
-declare function getUserSettings(): UserDefaults;
+declare function getUserSettings(): UserDefaults
 
 // ---cut---
-const settings = getUserSettings();
-settings.colorThemeOverride = 'dark';
-settings.colorThemeOverride = 'light';
+const settings = getUserSettings()
+settings.colorThemeOverride = 'dark'
+settings.colorThemeOverride = 'light'
 
 // But not:
 // settings.colorThemeOverride = undefined;

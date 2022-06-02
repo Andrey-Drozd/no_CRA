@@ -1,10 +1,10 @@
 function allowUnreachableCode(n: number) {
   if (n > 5) {
-    return true;
+    return true
   }
-  return false;
+  return false
 
   // return true;
 }
 
-allowUnreachableCode(123);
+allowUnreachableCode(123)

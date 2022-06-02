@@ -1,4 +1,4 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 // модули (функции)
 module.exports = ({ isDev }) => ({
@@ -8,17 +8,17 @@ module.exports = ({ isDev }) => ({
         test: /\.(png|jpe?g|gif|svg|ico)$/i,
         exclude: /node_modules/,
         generator: {
-          filename: 'images/[name]-[contenthash:8][ext]',
+          filename: 'images/[name]-[contenthash:8][ext]'
         },
-        type: 'asset/resource',
+        type: 'asset/resource'
       },
       {
         test: /\.(ttf|otf|eot|woff|woff2)$/i,
         exclude: /node_modules/,
         generator: {
-          filename: 'fonts/[name][ext]',
+          filename: 'fonts/[name][ext]'
         },
-        type: 'asset/resource',
+        type: 'asset/resource'
       },
       {
         test: /\.(js|jsx|ts|tsx)$/i,
@@ -29,10 +29,10 @@ module.exports = ({ isDev }) => ({
             options: {
               plugins: [isDev && require.resolve('react-refresh/babel')].filter(
                 Boolean
-              ),
-            },
-          },
-        ],
+              )
+            }
+          }
+        ]
       },
       {
         test: /\.(sc|c)ss$/i,
@@ -42,22 +42,22 @@ module.exports = ({ isDev }) => ({
           {
             loader: 'css-loader',
             options: {
-              modules: false, // для задания модульности css (уникальные стили)
-            },
+              modules: false // для задания модульности css (уникальные стили)
+            }
           },
           {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [['postcss-preset-env', {}]],
-              },
-            },
+                plugins: [['postcss-preset-env', {}]]
+              }
+            }
           },
           {
-            loader: 'sass-loader',
-          },
-        ],
-      },
-    ],
-  },
-});
+            loader: 'sass-loader'
+          }
+        ]
+      }
+    ]
+  }
+})

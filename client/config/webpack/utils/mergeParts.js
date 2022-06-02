@@ -1,12 +1,12 @@
-const env = process.env['NODE_ENV'] || 'development';
-const isBundleAnalyzer = process.env['BUNDLE_ANALYZER'] || false;
-const isDev = env === 'development';
+const env = process.env['NODE_ENV'] || 'development'
+const isBundleAnalyzer = process.env['BUNDLE_ANALYZER'] || false
+const isDev = env === 'development'
 
 module.exports = (parts) =>
   parts.reduce(
     (acc, part) => ({
       ...acc,
-      ...part({ isDev, isBundleAnalyzer }),
+      ...part({ isDev, isBundleAnalyzer })
     }),
     {}
-  );
+  )
