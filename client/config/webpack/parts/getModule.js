@@ -27,8 +27,9 @@ module.exports = ({ isDev }) => ({
           {
             loader: 'babel-loader', // есть аналог esbuild-loader
             options: {
-              plugins: [isDev && require.resolve('react-refresh/babel')]
-                .filter(Boolean),
+              plugins: [isDev && require.resolve('react-refresh/babel')].filter(
+                Boolean
+              ),
             },
           },
         ],
@@ -37,9 +38,7 @@ module.exports = ({ isDev }) => ({
         test: /\.(sc|c)ss$/i,
         exclude: /node_modules/,
         use: [
-          isDev
-            ? 'style-loader'
-            : MiniCssExtractPlugin.loader,
+          isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -50,11 +49,7 @@ module.exports = ({ isDev }) => ({
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [
-                  [
-                    'postcss-preset-env', {},
-                  ],
-                ],
+                plugins: [['postcss-preset-env', {}]],
               },
             },
           },

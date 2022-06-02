@@ -19,23 +19,35 @@ function Component1() {
 
         <div className="block1__subtitle">
           <span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur dolore doloremque eligendi fugit iure quibusdam quo.
-            Blanditiis ducimus, eius exercitationem fugiat nam quae ratione rem suscipit. Accusamus animi consequatur cumque, ex explicabo nemo.
-            Autem blanditiis, corporis culpa delectus dolore doloremque ex excepturi expedita id labore magnam nulla placeat praesentium quas quia quidem quis,
-            reprehenderit sit ut velit veniam veritatis voluptate voluptatum.
-            A aliquid amet at autem corporis culpa, deserunt dicta distinctio dolorem ex fugit impedit ipsa laboriosam modi neque nihil numquam odio possimus quam, quisquam,
-            ratione reiciendis rem repellat reprehenderit sunt tempora temporibus tenetur vel vero voluptatibus. Repellendus, voluptate.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+            consectetur dolore doloremque eligendi fugit iure quibusdam quo.
+            Blanditiis ducimus, eius exercitationem fugiat nam quae ratione rem
+            suscipit. Accusamus animi consequatur cumque, ex explicabo nemo.
+            Autem blanditiis, corporis culpa delectus dolore doloremque ex
+            excepturi expedita id labore magnam nulla placeat praesentium quas
+            quia quidem quis, reprehenderit sit ut velit veniam veritatis
+            voluptate voluptatum. A aliquid amet at autem corporis culpa,
+            deserunt dicta distinctio dolorem ex fugit impedit ipsa laboriosam
+            modi neque nihil numquam odio possimus quam, quisquam, ratione
+            reiciendis rem repellat reprehenderit sunt tempora temporibus
+            tenetur vel vero voluptatibus. Repellendus, voluptate.
           </span>
         </div>
 
         <div className="block1__subtitle2">
           <span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur dolore doloremque eligendi fugit iure quibusdam quo.
-            Blanditiis ducimus, eius exercitationem fugiat nam quae ratione rem suscipit. Accusamus animi consequatur cumque,
-            ex explicabo nemo. Autem blanditiis, corporis culpa delectus dolore doloremque ex excepturi expedita id labore magnam nulla placeat praesentium quas quia quidem quis,
-            reprehenderit sit ut velit veniam veritatis voluptate voluptatum. A aliquid amet at autem corporis culpa,
-            deserunt dicta distinctio dolorem ex fugit impedit ipsa laboriosam modi neque nihil numquam odio possimus quam, quisquam,
-            ratione reiciendis rem repellat reprehenderit sunt tempora temporibus tenetur vel vero voluptatibus. Repellendus, voluptate.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+            consectetur dolore doloremque eligendi fugit iure quibusdam quo.
+            Blanditiis ducimus, eius exercitationem fugiat nam quae ratione rem
+            suscipit. Accusamus animi consequatur cumque, ex explicabo nemo.
+            Autem blanditiis, corporis culpa delectus dolore doloremque ex
+            excepturi expedita id labore magnam nulla placeat praesentium quas
+            quia quidem quis, reprehenderit sit ut velit veniam veritatis
+            voluptate voluptatum. A aliquid amet at autem corporis culpa,
+            deserunt dicta distinctio dolorem ex fugit impedit ipsa laboriosam
+            modi neque nihil numquam odio possimus quam, quisquam, ratione
+            reiciendis rem repellat reprehenderit sunt tempora temporibus
+            tenetur vel vero voluptatibus. Repellendus, voluptate.
           </span>
         </div>
       </div>

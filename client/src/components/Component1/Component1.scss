@@ -1,20 +1,20 @@
 .block1 {
-    color: red;
-    width: 500px;
-    height: 500px;
-    background-image: url('./images/cat.jpg');
-    background-size: cover;
-    overflow: hidden;
+  color: red;
+  width: 500px;
+  height: 500px;
+  background-image: url("./images/cat.jpg");
+  background-size: cover;
+  overflow: hidden;
 
-    &__subtitle {
-        font-family: 'Inconsolata';
-        font-weight: 800;
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
+  &__subtitle {
+    font-family: "Inconsolata";
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 
-    &__subtitle2 {
-        font-family: 'Mukta';
-        font-weight: 200;
-    }
+  &__subtitle2 {
+    font-family: "Mukta";
+    font-weight: 200;
+  }
 }

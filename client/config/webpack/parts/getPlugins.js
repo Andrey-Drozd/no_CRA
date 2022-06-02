@@ -35,7 +35,6 @@ module.exports = ({ isDev, isBundleAnalyzer }) => {
   }
 
   return {
-    plugins: [...plugins, ...sharedPlugins]
-      .filter(Boolean),
+    plugins: [...plugins, ...sharedPlugins].filter(Boolean),
   };
 };
