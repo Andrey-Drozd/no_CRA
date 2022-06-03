@@ -1,20 +1,23 @@
 .block1 {
-  color: red;
-  width: 500px;
-  height: 500px;
-  background-image: url("./images/cat.jpg");
-  background-size: cover;
   overflow: hidden;
 
+  width: 500px;
+  height: 500px;
+
+  color: red;
+  background-image: url("./images/cat.jpg");
+  background-size: cover;
+
   &__subtitle {
-    font-family: "Inconsolata";
-    font-weight: 800;
-    font-size: 20px;
     margin-bottom: 20px;
+
+    font-family: Inconsolata, serif;
+    font-size: 20px;
+    font-weight: 800;
   }
 
   &__subtitle2 {
-    font-family: "Mukta";
+    font-family: Mukta, serif;
     font-weight: 200;
   }
 }
