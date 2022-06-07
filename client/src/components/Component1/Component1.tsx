@@ -1,15 +1,16 @@
 /* eslint-disable max-len */
-import React from 'react';
-import './Component1.scss';
+import './Component1.scss'
 
-import reverse from 'lodash/reverse';
+import reverse from 'lodash/reverse'
+import React from 'react'
 
-import CatImg from './images/cat.jpg';
+import CatImg from './images/cat.jpg'
 
 function Component1() {
-  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  const arrReverse = reverse(arr);
-  console.log(arrReverse);
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  const arrReverse = reverse(arr)
+  // eslint-disable-next-line no-console
+  console.log(arrReverse)
   return (
     <>
       <div className="block1">
@@ -54,7 +55,7 @@ function Component1() {
 
       <img alt="" src={CatImg} />
     </>
-  );
+  )
 }
 
-export { Component1 };
+export { Component1 }

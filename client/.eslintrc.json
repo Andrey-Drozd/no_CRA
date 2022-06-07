@@ -8,7 +8,8 @@
   "plugins": [
     "react",
     "react-hooks",
-    "jsx-a11y"
+    "jsx-a11y",
+    "simple-import-sort"
   ],
   "extends": [
     "airbnb",
@@ -47,6 +48,13 @@
       }
     ],
     "import/prefer-default-export": "off",
+    "sort-imports" : "off",
+    "import/order": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
     "quotes": [
       "error",
       "single",
