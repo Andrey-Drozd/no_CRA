@@ -24,6 +24,7 @@
     "outDir": "dist",
     "resolveJsonModule": true,
     "rootDir": ".",
+    "skipLibCheck": true,
     "strict": true,
     "target": "ES2015",
     "paths": {
