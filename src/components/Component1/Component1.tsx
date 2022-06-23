@@ -15,9 +15,7 @@ function Component1() {
     <>
       <div className="block1">
         <span>Component - 1!</span>
-
         <span>{arrReverse}</span>
-
         <div className="block1__subtitle">
           <span>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
@@ -34,7 +32,6 @@ function Component1() {
             tenetur vel vero voluptatibus. Repellendus, voluptate.
           </span>
         </div>
-
         <div className="block1__subtitle2">
           <span>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
@@ -52,7 +49,6 @@ function Component1() {
           </span>
         </div>
       </div>
-
       <img alt="" src={CatImg} />
     </>
   )

@@ -16,12 +16,12 @@ module.exports = ({ isDev, isBundleAnalyzer }) => {
   ]
 
   const devPlugins = [
-    // горячяя перезагрузка
+    // горячая перезагрузка
     new ReactRefreshWebpackPlugin()
   ]
 
   const prodPlugins = [
-    // извлекат css в отдельные файлы и добавляет ссылки на эти файлы в HTML документ
+    // извлекает css в отдельные файлы и добавляет ссылки на эти файлы в HTML документ
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
     })

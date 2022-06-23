@@ -6,7 +6,7 @@ module.exports = () => ({
     alias: {
       $components: path.resolve(__dirname, '../../../src/components')
     },
-    // чтобы не указывать импорт с расширеням
+    // чтобы не указывать импорт с расширением
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.css', '.scss']
   }
 })

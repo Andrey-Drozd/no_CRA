@@ -1,0 +1,20 @@
+.block1 {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  color: red;
+  background-image: url("./images/cat.jpg");
+  background-size: cover;
+
+  &__subtitle {
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: Inconsolata, serif;
+  }
+
+  &__subtitle2 {
+    font-weight: 200;
+    font-family: Mukta, serif;
+  }
+}
